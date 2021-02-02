@@ -1,4 +1,8 @@
 'use strict';
+// Assignments for JavaScript Fundamentals - Part 2
+
+
+
 
 // FUNCTIONS
 // 1.
@@ -62,7 +66,7 @@ const describePopulation = (country, population) => {
     return `${country} has ${population} million people which is about ${percentageOfWorld1(population)}% of the world.`
 }
 // 3.
-// console.log(describePopulation('USA', 350));
+// console.log(describePopulation('USA', 328));
 // console.log(describePopulation('China', 1441));
 // console.log(describePopulation('England', 56));
 
@@ -70,3 +74,36 @@ const describePopulation = (country, population) => {
 
 
 // INTRODUCTION TO ARRAYS
+// 1.
+const populations = [328, 108, 56, 6];
+// 2.
+// console.log(populations.length); // True
+// 3.
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+// console.log(percentages);
+
+
+
+
+// BASIC ARRAY OPERATIONS (METHODS)
+// 1.
+const neighbors = ['Canada', 'Mexico'];
+// 2.
+neighbors.push('Utopia');
+// 3.
+neighbors.pop();
+// 4.
+// if (neighbors.includes('Germany')) {
+//     console.log(`Probably a central European Country`)
+// } else {
+//     console.log(`Probably not a central European Country :D`)
+// }
+// 5.
+// console.log(neighbors.indexOf('Mexico'));
+neighbors[1] = 'Republic of Mexico';
+// console.log(neighbors);
+
+
+
+
+// INTRODUCTION TO OBJECTS
