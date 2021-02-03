@@ -107,3 +107,60 @@ neighbors[1] = 'Republic of Mexico';
 
 
 // INTRODUCTION TO OBJECTS
+// 1.
+// const myCountry = {
+//     country: 'The United States of America',
+//     capital: 'Washington D.C.',
+//     language: 'English',
+//     population: 328,
+//     neighbors: ['Mexico', 'Canada']
+// };
+
+
+
+
+// DOT VS. BRACKET NOTATION
+// 1.
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbors.length} neighboring countries and a capital called ${myCountry.capital}`);
+// 2.
+// console.log(myCountry.population + 2);
+// console.log(myCountry['population'] - 2); // these solutions will change the population number but not save it, use the += or -= to also save the changes
+// Better Solution
+// myCountry.population += 2;
+// console.log(myCountry.population);
+// myCountry['population'] -= 2;
+// console.log(myCountry.population); // these solutions will change the population number AND save it.
+
+
+
+
+// OBJECT METHODS
+const myCountry = {
+    country: 'The United States of America',
+    capital: 'Washington D.C.',
+    language: 'English',
+    population: 328,
+    neighbors: ['Mexico', 'Canada'],
+
+    // 1.
+    describe: function () {
+        return `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbors} neighboring countries and a capitol called ${this.capital}`;
+    },
+
+    // 3.
+    checkIsland: function () {
+        this.isIsland = this.neighbors.length === 0 ? true : false;
+
+        // this.isIsland = !Boolean(this.neighbors.length); // Simpler solution
+
+        return this.isIsland;
+    }
+};
+// 2.
+myCountry.describe();
+// console.log(myCountry.checkIsland());
+
+
+
+
+// ITERATION: THE FOR LOOP

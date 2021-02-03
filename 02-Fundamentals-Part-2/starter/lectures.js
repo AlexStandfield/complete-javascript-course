@@ -228,4 +228,122 @@ if (friends.includes('Michael')) {
 
 /*
 INTRODUCTION TO OBJECTS
+
+const alex = {
+    firstName: 'Alex',
+    lastName: 'Standfield',
+    age: 2037 - 1998,
+    job: 'programmer',
+    friends: ['Michael', 'Austin', 'Caleb']
+};
+*/
+
+
+
+
+/*
+DOT VS. BRACKET NOTATION
+
+const alex = {
+    firstName: 'Alex',
+    lastName: 'Standfield',
+    age: 2037 - 1998,
+    job: 'Programmer',
+    friends: ['Michael', 'Austin', 'Caleb']
+};
+// console.log(alex);
+
+// Dot Noatation
+console.log(alex.lastName);
+// Bracket Notation
+console.log(alex['lastName']);
+
+const nameKey = 'Name';
+console.log(alex['first' + nameKey]);
+console.log(alex['last' + nameKey]);
+
+// console.log(alex.'last' + nameKey); // This will not work, this is why we need bracket notation
+
+const interestedIn = prompt('What do you want to know about Alex? Choose between firstName, lastName, age, job, and friends.');
+
+if (alex[interestedIn]) {
+    console.log(alex[interestedIn]);
+} else {
+    console.log(`Wrong request! Choose between firstName, lastName, age, job, and friends.`)
+}
+
+alex.location = 'The United States of America';
+alex['twitter'] = '@AlexStandfield';
+console.log(alex);
+
+// Challenge
+// 'Alex has 3 friends, and his best friend is called Michael'
+console.log(`${alex.firstName} has ${alex.friends.length} friends, and his best friend is called ${alex.friends[0]}`);
+*/
+
+
+
+
+/*
+OBJECT METHODS
+
+const alex = {
+    firstName: 'Alex',
+    lastName: 'Standfield',
+    birthYear: 1998,
+    job: 'programmer',
+    friends: ['Michael', 'Austin', 'Caleb'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2037 - birthYear
+    // } // we would have to pass in the birthYear as an argument for this method
+
+    // calcAge: function () {
+    //     // console.log(this);
+    //     return 2037 - this.birthYear;
+    // } // now we don't have to pass it in as an argument but it will grab the value from the alex object
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear
+        return this.age;
+    }, // this is the most efficient solution because it will grab the birthYear from the alex object and store now store the age as a Key Value Pair in the object that can be used later
+
+    // driversLicense: function () {
+    //     if (this.hasDriversLicense) {
+    //         return `has a driver's license`
+    //         // this.driversLicenseString = `has a drivers license`;
+    //         // return this.driversLicenseString;
+    //     } else {
+    //         return `has no driver's license`
+    //         // this.driversLicenseString = `has no drivers license`;
+    //         // return this.driversLicenseString
+    //     }
+    // },
+
+    // getSummary: function () {
+    //     this.driversLicense();
+    //     return `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and ${this.driversLicense()}`;
+    // }, // this was my way, not a good/effective way
+
+    getSummary2: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+    } // this was his way, goo and effective, TERNARY STATEMENT
+};
+
+console.log(alex.calcAge());
+console.log(alex.age);
+// console.log(alex['calcAge'](1998));
+
+// Challenge
+// 'Alex is a 39-year old programmer, and he has a/no drivers license'
+// console.log(alex.getSummary());
+console.log(alex.getSummary2());
+*/
+
+
+
+
+/*
+ITERATION: THE FOR LOOP
 */

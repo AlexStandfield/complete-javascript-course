@@ -5,7 +5,7 @@
 
 
 /*
-CODING CHALLENGE #1
+CODING CHALLENGE #1 (FUNCTIONS)
 // 1.
 const calcAverage = (num1, num2, num3) => (num1 + num2 + num3) / 3;
 // 2.
@@ -34,7 +34,7 @@ console.log(checkWinner(dolphinsScore2, koalasScore2));
 
 
 /*
-CODING CHALLENGE #2
+CODING CHALLENGE #2 (ARRAYS)
 // 1. // Likes to give arrays plural names because there are multiple values
 const calcTip = (bill) => bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
 console.log(calcTip(100)); // returns 15
@@ -51,7 +51,44 @@ console.log(total);
 
 
 
+/*
+CODING CHALLANGE #3 (OBJECTS)
+// 1.
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    // 2.
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    // 2.
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+// 3.
+mark.calcBMI();
+john.calcBMI();
+console.log(`${john.fullName}'s BMI (${john.bmi}) ${john.bmi > mark.bmi ? 'is higher' : 'is lower'} than ${mark.fullName}'s BMI (${mark.bmi})`);
+// Alternate Solution
+if (mark.bmi > john.bmi) {
+    console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`);
+} else if (john.bmi > mark.bmi) {
+    console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`);
+}
+*/
+
+
+
 
 /*
-CODING CHALLANGE #3
+CODING CHALLENGE #4
 */
