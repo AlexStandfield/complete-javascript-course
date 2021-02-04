@@ -429,4 +429,35 @@ for (let i = 0; i < alex.length; i++) {
 
 /*
 LOOPING BACKWARDS AND LOOPS IN LOOPS
+
+const alex = [
+    'Alex',
+    'Standfield',
+    2037 - 1998,
+    'programmer',
+    ['Michael', 'Austin', 'Caleb']
+];
+
+// 0, 1, ..., 4 Regular For Loop
+
+// 4, 3, ..., 0 Backwards For Loop
+for (let i = alex.length - 1; i >= 0; i--) {
+    console.log(i, alex[i]);
+}
+
+// Loops in Loops
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`--- Starting Exercise ${exercise} ---`);
+
+    for (let rep = 1; rep <= 5; rep++) {
+        console.log(` Exercise ${exercise}: Lifting Weight! 🏋️‍♀️ Repetition ${rep}`);
+    }
+}
+*/
+
+
+
+
+/*
+THE WHILE LOOP
 */

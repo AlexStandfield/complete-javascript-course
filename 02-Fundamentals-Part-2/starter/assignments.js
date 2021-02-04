@@ -203,3 +203,20 @@ function percentageOfWorld1(population) {
 
 
 // LOOPING BACKWARDS AND LOOPS IN LOOPS
+// 1.
+// const listOfNeighbors = [
+//     ['Canada', 'Mexico'],
+//     ['Spain'],
+//     ['Norway', 'Sweden', 'Russia']
+// ];
+// 2.
+// for (let i = 0; i < listOfNeighbors.length; i++) {
+//     for (let z = 0; z < listOfNeighbors[i].length; z++) {
+//         console.log(`Neighbor: ${listOfNeighbors[i][z]}`);
+//     }
+// }
+
+
+
+
+// THE WHILE LOOP
