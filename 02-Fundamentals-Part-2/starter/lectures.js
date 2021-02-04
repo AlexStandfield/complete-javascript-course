@@ -346,4 +346,87 @@ console.log(alex.getSummary2());
 
 /*
 ITERATION: THE FOR LOOP
+
+// console.log('Lifting weights repetition 1 🏋️‍♀️');
+// console.log('Lifting weights repetition 2 🏋️‍♀️');
+// console.log('Lifting weights repetition 3 🏋️‍♀️');
+// console.log('Lifting weights repetition 4 🏋️‍♀️');
+// console.log('Lifting weights repetition 5 🏋️‍♀️');
+// console.log('Lifting weights repetition 6 🏋️‍♀️');
+// console.log('Lifting weights repetition 7 🏋️‍♀️');
+// console.log('Lifting weights repetition 8 🏋️‍♀️');
+// console.log('Lifting weights repetition 9 🏋️‍♀️');
+// console.log('Lifting weights repetition 10 🏋️‍♀️'); // violates the don't repeat yourself principle
+
+// 1st part sets the initial value (let rep = 1;)
+// 2nd part sets the condition that will be checked before every iteration, the for loop will keep running while the condition is TRUE (re <= 10;)
+// 3rd part sets the amount that it will increase by after each iteration   (rep++)
+
+for (let rep = 1; rep <= 30; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+*/
+
+
+
+
+/*
+LOOPING ARRAYS, BREAKING AND CONTINUING
+
+const alex = [
+    'Alex',
+    'Standfield',
+    2037 - 1998,
+    'programmer',
+    ['Michael', 'Austin', 'Caleb'],
+    true
+];
+
+const types = [];
+
+// console.log(alex[0]);
+// console.log(alex[1]);
+// ...
+// console.log(alex[4]);
+
+for (let i = 0; i < alex.length; i++) {
+    // Reading from alex array
+    console.log(alex[i], typeof alex[i]);
+
+    // Filling types array
+    // types[i] = typeof alex[i];
+    types.push(typeof alex[i]); // This way is a little bit cleaner
+}
+
+console.log(types);
+
+const years = [1998, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log(`--- ONLY STRINGS ---`)
+for (let i = 0; i < alex.length; i++) {
+    if (typeof alex[i] !== 'string') continue;
+
+    console.log(alex[i], typeof alex[i]);
+}
+
+console.log(` --- BREAK WITH NUMBER ---`)
+for (let i = 0; i < alex.length; i++) {
+    if (typeof alex[i] === 'number') break;
+
+    console.log(alex[i], typeof alex[i]);
+}
+*/
+
+
+
+
+/*
+LOOPING BACKWARDS AND LOOPS IN LOOPS
 */

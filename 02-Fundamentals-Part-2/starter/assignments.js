@@ -6,14 +6,14 @@
 
 // FUNCTIONS
 // 1.
-function describeCountry(country, population, capitalCity) {
-    const countryDescribed = `${country} has ${population} million people and its capital city is ${capitalCity}.`;
-    return countryDescribed;
-}
+// function describeCountry(country, population, capitalCity) {
+//     const countryDescribed = `${country} has ${population} million people and its capital city is ${capitalCity}.`;
+//     return countryDescribed;
+// }
 // 2.
-const denmark = describeCountry('Denmark', 6, 'Copenhagen');
-const phillipines = describeCountry('The Phillipines', 108, 'Manila');
-const usa = describeCountry('The United States of America', 328, 'Washington D.C.');
+// const denmark = describeCountry('Denmark', 6, 'Copenhagen');
+// const phillipines = describeCountry('The Phillipines', 108, 'Manila');
+// const usa = describeCountry('The United States of America', 328, 'Washington D.C.');
 // console.log(denmark);
 // console.log(phillipines);
 // console.log(usa);
@@ -27,19 +27,19 @@ function percentageOfWorld1(population) {
     return population / 7900 * 100; // 2.
 }
 // 3.
-const usaWorldPop = percentageOfWorld1(328);
-const denmarkWorldPop = percentageOfWorld1(6);
-const phillipinesWorldPop = percentageOfWorld1(108);
+// const usaWorldPop = percentageOfWorld1(328);
+// const denmarkWorldPop = percentageOfWorld1(6);
+// const phillipinesWorldPop = percentageOfWorld1(108);
 // console.log(usaWorldPop);
 // console.log(denmarkWorldPop);
 // console.log(phillipinesWorldPop);
 // 4.
-const percentageOfWorld2 = function (population) {
-    return population / 7900 * 100;
-}
-const englandWorldPop = percentageOfWorld2(56);
-const chinaWorldPop = percentageOfWorld2(1441);
-const franceWorldPop = percentageOfWorld2(67);
+// const percentageOfWorld2 = function (population) {
+//     return population / 7900 * 100;
+// }
+// const englandWorldPop = percentageOfWorld2(56);
+// const chinaWorldPop = percentageOfWorld2(1441);
+// const franceWorldPop = percentageOfWorld2(67);
 // console.log(englandWorldPop);
 // console.log(chinaWorldPop);
 // console.log(franceWorldPop);
@@ -47,12 +47,13 @@ const franceWorldPop = percentageOfWorld2(67);
 
 
 
+
 // ARROW FUNCTIONS
 // 1.
-const percentageOfWorld3 = population => population / 7900 * 100;
-const englandWorldPop2 = percentageOfWorld3(56);
-const chinaWorldPop2 = percentageOfWorld3(1441);
-const franceWorldPop2 = percentageOfWorld3(67);
+// const percentageOfWorld3 = population => population / 7900 * 100;
+// const englandWorldPop2 = percentageOfWorld3(56);
+// const chinaWorldPop2 = percentageOfWorld3(1441);
+// const franceWorldPop2 = percentageOfWorld3(67);
 // console.log(englandWorldPop2);
 // console.log(chinaWorldPop2);
 // console.log(franceWorldPop2);
@@ -60,11 +61,12 @@ const franceWorldPop2 = percentageOfWorld3(67);
 
 
 
+
 // FUNCTIONS CALLING OTHER FUNCTIONS
 // 1.
-const describePopulation = (country, population) => {
-    return `${country} has ${population} million people which is about ${percentageOfWorld1(population)}% of the world.`
-}
+// const describePopulation = (country, population) => {
+//     return `${country} has ${population} million people which is about ${percentageOfWorld1(population)}% of the world.`
+// }
 // 3.
 // console.log(describePopulation('USA', 328));
 // console.log(describePopulation('China', 1441));
@@ -73,25 +75,29 @@ const describePopulation = (country, population) => {
 
 
 
+
+
 // INTRODUCTION TO ARRAYS
 // 1.
-const populations = [328, 108, 56, 6];
+// const populations = [328, 108, 56, 6];
 // 2.
 // console.log(populations.length); // True
 // 3.
-const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+// const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
 // console.log(percentages);
+
+
 
 
 
 
 // BASIC ARRAY OPERATIONS (METHODS)
 // 1.
-const neighbors = ['Canada', 'Mexico'];
+// const neighbors = ['Canada', 'Mexico'];
 // 2.
-neighbors.push('Utopia');
+// neighbors.push('Utopia');
 // 3.
-neighbors.pop();
+// neighbors.pop();
 // 4.
 // if (neighbors.includes('Germany')) {
 //     console.log(`Probably a central European Country`)
@@ -100,8 +106,9 @@ neighbors.pop();
 // }
 // 5.
 // console.log(neighbors.indexOf('Mexico'));
-neighbors[1] = 'Republic of Mexico';
+// neighbors[1] = 'Republic of Mexico';
 // console.log(neighbors);
+
 
 
 
@@ -115,6 +122,7 @@ neighbors[1] = 'Republic of Mexico';
 //     population: 328,
 //     neighbors: ['Mexico', 'Canada']
 // };
+
 
 
 
@@ -134,33 +142,64 @@ neighbors[1] = 'Republic of Mexico';
 
 
 
+
+
 // OBJECT METHODS
-const myCountry = {
-    country: 'The United States of America',
-    capital: 'Washington D.C.',
-    language: 'English',
-    population: 328,
-    neighbors: ['Mexico', 'Canada'],
+// const myCountry = {
+//     country: 'The United States of America',
+//     capital: 'Washington D.C.',
+//     language: 'English',
+//     population: 328,
+//     neighbors: ['Mexico', 'Canada'],
 
-    // 1.
-    describe: function () {
-        return `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbors} neighboring countries and a capitol called ${this.capital}`;
-    },
+// 1.
+//     describe: function () {
+//         return `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neighbors} neighboring countries and a capitol called ${this.capital}`;
+//     },
 
-    // 3.
-    checkIsland: function () {
-        this.isIsland = this.neighbors.length === 0 ? true : false;
+// 3.
+//     checkIsland: function () {
+//         this.isIsland = this.neighbors.length === 0 ? true : false;
 
-        // this.isIsland = !Boolean(this.neighbors.length); // Simpler solution
+// this.isIsland = !Boolean(this.neighbors.length); // Simpler solution
 
-        return this.isIsland;
-    }
-};
+//         return this.isIsland;
+//     }
+// };
 // 2.
-myCountry.describe();
+// myCountry.describe();
 // console.log(myCountry.checkIsland());
 
 
 
 
+
+
 // ITERATION: THE FOR LOOP
+// 1.
+// for (let voter = 1; voter <= 50; voter++) {
+//     console.log(`Voter number ${voter} is currently voting`);
+// }
+
+
+
+
+// LOOPING ARRAYS, BREAKING AND CONTINUING
+// 1.
+// const populations2 = [328, 108, 56, 6];
+// 2.
+// const percentages2 = [];
+// for (let i = 0; i < populations2.length; i++) {
+//     percentages2.push(percentageOfWorld1(populations2[i]));
+
+//     // Alternate Solution (cleaner looking)
+//     // const perc = percentageOfWorld1(populations[i]);
+//     // percentages2.push(perc);
+// }
+// 3.
+// console.log(percentages2);
+
+
+
+
+// LOOPING BACKWARDS AND LOOPS IN LOOPS
