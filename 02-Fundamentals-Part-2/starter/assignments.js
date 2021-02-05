@@ -79,7 +79,7 @@ function percentageOfWorld1(population) {
 
 // INTRODUCTION TO ARRAYS
 // 1.
-// const populations = [328, 108, 56, 6];
+const populations = [328, 108, 56, 6];
 // 2.
 // console.log(populations.length); // True
 // 3.
@@ -189,12 +189,12 @@ function percentageOfWorld1(population) {
 // const populations2 = [328, 108, 56, 6];
 // 2.
 // const percentages2 = [];
-// for (let i = 0; i < populations2.length; i++) {
-//     percentages2.push(percentageOfWorld1(populations2[i]));
+// for (let i = 0; i < populations.length; i++) {
+//     percentages2.push(percentageOfWorld1(populations[i]));
 
-//     // Alternate Solution (cleaner looking)
-//     // const perc = percentageOfWorld1(populations[i]);
-//     // percentages2.push(perc);
+// Alternate Solution (cleaner looking)
+// const perc = percentageOfWorld1(populations[i]);
+// percentages2.push(perc);
 // }
 // 3.
 // console.log(percentages2);
@@ -213,10 +213,25 @@ function percentageOfWorld1(population) {
 // for (let i = 0; i < listOfNeighbors.length; i++) {
 //     for (let z = 0; z < listOfNeighbors[i].length; z++) {
 //         console.log(`Neighbor: ${listOfNeighbors[i][z]}`);
-//     }
+//      }
 // }
 
 
 
 
 // THE WHILE LOOP
+// 1.
+// const percentages3 = [];
+// let i = 0;
+// while (i < populations.length) {
+//     percentages3.push(percentageOfWorld1(populations[i]));
+
+//     // Alternate Solution
+//     // const perc = percentageOfWorld1(populations[i]);
+//     // percentages3.push(perc);
+
+//     i++;
+// }
+// console.log(percentages3);
+// 2.
+// I like the While loop over the For loop. I think the While loop looks cleaner and it feels easier to read and more flexible. I like the space between the Inital Value, Condition, and Amount Increased in the While loop.

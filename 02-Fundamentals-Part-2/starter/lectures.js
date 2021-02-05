@@ -460,4 +460,29 @@ for (let exercise = 1; exercise <= 3; exercise++) {
 
 /*
 THE WHILE LOOP
+
+// Regular Loop
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+
+// While Loop
+let rep = 1; // Initial Value
+while (rep <= 10) { // Condition
+    console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
+    rep++; // Amount Increase/Decrease
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log('Loop is about to end...')
+}
 */
+
+
+
+
+// End of JavaScript Fundamentals - Part 2

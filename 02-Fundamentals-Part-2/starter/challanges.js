@@ -34,7 +34,8 @@ console.log(checkWinner(dolphinsScore2, koalasScore2));
 
 
 /*
-CODING CHALLENGE #2 (ARRAYS)
+CODING CHALLENGE #2(ARRAYS)
+
 // 1. // Likes to give arrays plural names because there are multiple values
 const calcTip = (bill) => bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
 console.log(calcTip(100)); // returns 15
@@ -91,4 +92,31 @@ if (mark.bmi > john.bmi) {
 
 /*
 CODING CHALLENGE #4
+const calcTip = (bill) => bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
+// 1.
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// 2.
+const tips = [];
+const totals = [];
+// 3.
+for (let i = 0; i < bills.length; i++) {
+    tips.push(calcTip([bills[i]]));
+    totals.push(bills[i] + tips[i]);
+
+    // Alternate Solution
+
+    // const tip = calcTip(bills[i]);
+    // tips.push(tip);
+    // totals.push(tip + bills[i]);
+}
+console.log(tips, totals);
+// 4. BONUS
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log(calcAverage(totals));
 */
