@@ -2,14 +2,20 @@
 
 /*
 PROJECT #2: MODAL WINDOW
-
-Optimal Code
 */
 
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
+
+// for (let i = 0; i < btnsOpenModal.length; i++) {
+//   console.log(btnsOpenModal[i].textContent);
+// }
+
+/*
+WORKING WITH CLASSES
+*/
 
 const openModal = function () {
   console.log('Button clicked');
@@ -27,6 +33,10 @@ for (let i = 0; i < btnsOpenModal.length; i++)
 
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+
+/*
+HANDLING AN "ESP" KEYPRESS EVENT
+*/
 
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
